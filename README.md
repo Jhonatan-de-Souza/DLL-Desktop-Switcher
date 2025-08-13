@@ -50,6 +50,20 @@ Se você deseja que o script seja iniciado automaticamente junto com o Windows, 
 
 Se desejar alterar as teclas de atalho, edite o arquivo `switchkeyt.ahk` e substitua as linhas que mapeiam as teclas para os desktops desejados.
 
+### Como modificar para outras teclas
+
+Se o seu teclado não possui as teclas F13, F14, F15, F16 ou F17, você pode modificar o script para usar qualquer outra tecla ou combinação de teclas. Para isso:
+
+1. Abra o arquivo `switchkeyt.ahk` em um editor de texto.
+2. Procure pelas linhas que começam com `F13::`, `F14::`, etc. Essas linhas definem o que acontece quando cada tecla é pressionada.
+3. Substitua `F13::` por outra tecla ou combinação, por exemplo:
+   - Para usar `Ctrl+Alt+1`, escreva `^!1::`
+   - Para usar a tecla `CapsLock`, escreva `CapsLock::`
+   - Para usar `Win+Q`, escreva `#q::`
+4. Salve o arquivo e execute novamente o script.
+
+Você pode consultar a documentação oficial do AutoHotkey para ver todos os nomes e combinações possíveis de teclas: https://www.autohotkey.com/docs/v2/Hotkeys.htm
+
 ## Observações
 
 - O script depende da DLL `VirtualDesktopAccessor.dll` para funcionar corretamente.
