@@ -1,4 +1,6 @@
-# Desktop Switcher para teclados split
+# Alternador de Desktops para Teclado Dividido
+
+Este projeto é direcionado para usuários de teclados split, permitindo alternar entre desktops virtuais no Windows usando teclas de função especiais (F13, F14, F15, F16, F17). No entanto, você pode facilmente personalizar o script para usar qualquer outra combinação de teclas, caso entenda como funciona o AutoHotkey.
 
 Este projeto contém um script AutoHotkey para alternar entre desktops virtuais no Windows usando teclas de função especiais (F13, F14, F15, F16, F17). O script utiliza a biblioteca `VirtualDesktopAccessor.dll` para controlar os desktops virtuais.
 
@@ -17,7 +19,7 @@ Essas teclas podem ser encontradas em alguns teclados especiais, como teclados d
 ## Requisitos
 
 - Windows 10 ou superior
-- [AutoHotkey v1.1 ou v2](https://www.autohotkey.com/)
+- [AutoHotkey v2](https://www.autohotkey.com/) (obrigatório)
 - `VirtualDesktopAccessor.dll` (já incluído neste repositório)
 
 ## Instalação
