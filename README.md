@@ -71,11 +71,3 @@ Você pode consultar a documentação oficial do AutoHotkey para ver todos os no
 
 - O script depende da DLL `VirtualDesktopAccessor.dll` para funcionar corretamente.
 - Caso tenha problemas, verifique se a DLL está na mesma pasta do script e se o AutoHotkey está instalado corretamente.
-
-## Licença
-
-Este projeto está sob a licença MIT.
-
----
-
-Se tiver dúvidas ou sugestões, abra uma issue no repositório ou entre em contato.
