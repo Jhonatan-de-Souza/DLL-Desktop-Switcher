@@ -31,6 +31,3 @@ F14::GoToDesktop1(2)
 F15::GoToDesktop1(3)
 F16::GoToDesktop1(4)
 F17::GoToDesktop1(5)
-
-; Optional: reload script quickly
-^+r::Reload
