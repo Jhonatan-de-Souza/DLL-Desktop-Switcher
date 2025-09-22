@@ -1,73 +1,82 @@
-# Alternador de Desktops para Teclado Dividido e Teclado Comum
+ # Alternador rápido de desktops (atalhos)
 
-Este projeto oferece dois scripts AutoHotkey para alternar entre desktops virtuais no Windows:
+ Projeto simples em AutoHotkey para alternar desktops virtuais do Windows usando atalhos de teclado.
 
-- **Script para teclados split**: Permite personalizar as teclas F13, F14, F15, F16 e F17 para alternar entre os desktops 1 a 5. Ideal para quem possui teclados divididos ou customizados.
-- **Script para teclados comuns**: Utiliza combinações de teclas Alt+1, Alt+2, Alt+3, Alt+4 e Alt+5 para alternar entre os desktops 1 a 5, facilitando o uso em qualquer teclado padrão.
+ Temos duas versões:
 
-Ambos os scripts utilizam a biblioteca `VirtualDesktopAccessor.dll` para controlar os desktops virtuais. Caso você queira usar outras combinações de teclas, basta modificar o script conforme explicado abaixo.
+ - Versão para teclado comum: pensada para teclados padrão — usa atalhos fáceis (Alt+1, Alt+2, Alt+3, Alt+4, Alt+5)
+ - Versão para teclado split/custom: pensada para teclados com teclas extras (F13, F14, F15, F16, F17)
 
-## Como funciona
+ Ambas dependem da biblioteca `VirtualDesktopAccessor.dll` (incluída neste repositório).
 
-O script mapeia as seguintes teclas para alternar entre os desktops virtuais numerados de 1 a 5:
+## Como Instalar e Usar
 
-- **F13** → Desktop 1
-- **F14** → Desktop 2
-- **F15** → Desktop 3
-- **F16** → Desktop 4
-- **F17** → Desktop 5
+Para quem usa teclado comuns
 
-Essas teclas podem ser encontradas em alguns teclados especiais, como teclados divididos ou customizados. Caso seu teclado não possua essas teclas, você pode modificar o script para usar outras teclas.
+ Requisitos:
 
-## Requisitos
+ - Windows 10 ou superior
+ - [AutoHotkey v2](https://www.autohotkey.com/) - clique aqui para baixar
 
-- Windows 10 ou superior
-- [AutoHotkey v2](https://www.autohotkey.com/) (obrigatório)
-- `VirtualDesktopAccessor.dll` (já incluído neste repositório)
+ Instalação:
 
-## Instalação
+ 1. Instale o AutoHotkey v2 no Windows [baixe versões completas aqui](https://github.com/Jhonatan-de-Souza/DLL-Desktop-Switcher/releases)
+ 2. Abra a pasta `teclado-comum` dentro deste repositório.
+ 3. Verifique se o arquivo `VirtualDesktopAccessor.dll` está na mesma pasta que o script `teclado-comum.ahk`.
 
-1. Instale o AutoHotkey em seu computador.
-2. Baixe ou clone este repositório:
-   ```
-   git clone https://github.com/jhonatan-de-souza/split-keyboard.git
-   ```
-3. Certifique-se de que o arquivo `VirtualDesktopAccessor.dll` está na mesma pasta que o script `switchkeyt.ahk`.
+ Uso:
 
-## Como usar
+ 1. Dê um duplo clique em `teclado-comum.ahk` para rodar o script.
+ 2. Use os atalhos a seguir para ir diretamente para cada desktop:
+    - `Alt+1` → Desktop 1
+    - `Alt+2` → Desktop 2
+    - `Alt+3` → Desktop 3
+    - `Alt+4` → Desktop 4
+    - `Alt+5` → Desktop 5
 
-1. Clique duas vezes no arquivo `switchkeyt.ahk` para executar o script.
-2. Pressione as teclas F13, F14, F15, F16 ou F17 para alternar entre os desktops virtuais 1, 2, 3, 4 ou 5, respectivamente.
+ Iniciar automaticamente com o Windows (opcional):
 
-### Iniciar automaticamente com o Windows
+ 1. Crie um atalho para `teclado-comum.ahk` (clique direito → "Criar atalho").
+ 2. Pressione `Win + R`, digite `shell:startup` e pressione Enter.
+ 3. Mova o atalho para a pasta de inicialização aberta.
 
-Se você deseja que o script seja iniciado automaticamente junto com o Windows, siga estes passos:
+ ## Teclado split / custom (instalação e uso)
 
-1. Clique com o botão direito no arquivo `switchkeyt.ahk` e selecione "Criar atalho".
-2. Mova o atalho criado para a área de trabalho.
-3. Pressione `Win + R`, digite `shell:startup` e pressione Enter para abrir a pasta de inicialização do Windows.
-4. Mova o atalho da área de trabalho para dentro da pasta de inicialização.
-5. Pronto! Agora o script será iniciado automaticamente toda vez que o Windows for iniciado.
+ Recomendado se seu teclado tem teclas extras F13–F17 (teclados divididos ou customizados).
 
-## Personalização
+ Requisitos:
 
-Se desejar alterar as teclas de atalho, edite o arquivo `switchkeyt.ahk` e substitua as linhas que mapeiam as teclas para os desktops desejados.
+ - Windows 10 ou superior
+ - [AutoHotkey v2](https://www.autohotkey.com/)
+ - `VirtualDesktopAccessor.dll` (já disponível nas pastas deste repositório)
 
-### Como modificar para outras teclas
+ Instalação:
 
-Se o seu teclado não possui as teclas F13, F14, F15, F16 ou F17, você pode modificar o script para usar qualquer outra tecla ou combinação de teclas. Para isso:
+ 1. Instale o AutoHotkey v2 no Windows.
+ 2. Abra a pasta `teclado-split` dentro deste repositório.
+ 3. Verifique se o arquivo `VirtualDesktopAccessor.dll` está na mesma pasta que o script `teclado-comum.ahk`.
 
-1. Abra o arquivo `switchkeyt.ahk` em um editor de texto.
-2. Procure pelas linhas que começam com `F13::`, `F14::`, etc. Essas linhas definem o que acontece quando cada tecla é pressionada.
-3. Substitua `F13::` por outra tecla ou combinação, por exemplo:
-   - Para usar `Ctrl+Alt+1`, escreva `^!1::`
-   - Para usar a tecla `CapsLock`, escreva `CapsLock::`
-   - Para usar `Win+Q`, escreva `#q::`
-4. Salve o arquivo e execute novamente o script.
+ Uso:
 
-Você pode consultar a documentação oficial do AutoHotkey para ver todos os nomes e combinações possíveis de teclas: https://www.autohotkey.com/docs/v2/Hotkeys.htm
+ 1. Dê um duplo clique em `teclado-comum.ahk` dentro da pasta `teclado-split` para rodar o script.
+ 2. Use as teclas F13–F17 para alternar entre os desktops:
+    - `F13` → Desktop 1
+    - `F14` → Desktop 2
+    - `F15` → Desktop 3
+    - `F16` → Desktop 4
+    - `F17` → Desktop 5
 
-## Observações
+ Iniciar automaticamente com o Windows (opcional):
 
-- O script depende da DLL `VirtualDesktopAccessor.dll` para funcionar corretamente.
-- Caso tenha problemas, verifique se a DLL está na mesma pasta do script e se o AutoHotkey está instalado corretamente.
+ 1. Crie um atalho para `teclado-comum.ahk` (clique direito → "Criar atalho").
+ 2. Pressione `Win + R`, digite `shell:startup` e pressione Enter.
+ 3. Mova o atalho para a pasta de inicialização aberta.
+
+ ## Personalização rápida
+
+ Se quiser trocar os atalhos, abra o arquivo `.ahk` correspondente e altere as hotkeys. Consulte a documentação do AutoHotkey v2 para referências de nomes e combinações de teclas: https://www.autohotkey.com/docs/v2/Hotkeys.htm
+
+ ## Observações
+
+ - Mantenha a `VirtualDesktopAccessor.dll` na mesma pasta do script que você executar.
+ - Se algo não funcionar, verifique se o AutoHotkey está instalado (v2) e se a DLL está presente.
