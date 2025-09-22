@@ -1,5 +1,5 @@
 # DLL-Desktop-Switcher
-#### Ferramenta para alterar desktops virtuais através de atalhos
+### Ferramenta para alterar desktops virtuais através de atalhos
 
 Temos duas versões:
 
