@@ -1,6 +1,5 @@
-# DLL-Desktop-Switcher - Guia de Instalação
-
- Projeto simples em AutoHotkey para alternar desktops virtuais do Windows usando atalhos de teclado.
+# DLL-Desktop-Switcher
+#### Ferramenta para alterar desktops virtuais através de atalhos
 
 Temos duas versões:
 
