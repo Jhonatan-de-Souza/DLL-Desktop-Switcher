@@ -8,12 +8,12 @@ Temos duas versões:
 
 ## Requisitos
 
-- Windows 10
+- Windows 11 (versão acima de 24H2 26100.2605) 
 - [AutoHotKey](https://www.autohotkey.com/) instalado
 
 ## Como Instalar e Usar
 
-1. Certifique-se de que está utilizando **Windows 10**.  
+1. Certifique-se de que está utilizando **Windows 11 acima de 24H2 26100.2605**.  
 2. Baixe e instale o **AutoHotKey** pelo link acima.  
 3. Faça o download do programa completo [neste link aqui](https://github.com/Jhonatan-de-Souza/DLL-Desktop-Switcher/releases).  
 4. Extraia o arquivo baixado(teclado-comum para teclados comuns e teclado-split para teclados split) e escolha um local no seu computador onde ele **não será apagado**.  
